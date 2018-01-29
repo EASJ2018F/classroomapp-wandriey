@@ -16,7 +16,7 @@ namespace ClassRoom
 
             Console.WriteLine($"Semester start er: {klasseRumA.SemesterStart}");   //Checking the data is set. 
 
-            Studerende Jonas = new Studerende("Jonas", 06, 22);
+            Studerende Jonas = new Studerende("Jonas", 16, 22);
             Studerende Ian = new Studerende("Ian", 06, 23);
             Studerende Kasper = new Studerende("Kasper", 08, 05);
             Studerende Christoffer = new Studerende("Christoffer", 12, 03);

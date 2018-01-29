@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ClassRoom
 {
@@ -14,6 +10,11 @@ namespace ClassRoom
 
         public Studerende(string Navn, int fødselsmåned, int fødselsdag)
         {
+            if (fødselsmåned < 1 || fødselsmåned > 12)                              //validation of the birhtmonth, if its not in the interval
+            {                                                                       //1-12, an expection is throwned. 
+                throw new ArgumentException("Fødselsmåneden er ikke indenfor intervallet 1-12");               
+            }
+
             _navn = Navn;
             _fødselsmåned = fødselsmåned;
             _fødselsdag = fødselsdag;
