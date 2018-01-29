@@ -23,5 +23,11 @@ namespace ClassRoom
         public int Fødselsmåned { get { return _fødselsmåned; } set { _fødselsmåned = value; } }
         public int Fødselsdag { get { return _fødselsdag; } set { _fødselsdag = value; } }
 
+
+
+        public override string ToString()
+        {
+            return Navn;
+        }
     }
 }

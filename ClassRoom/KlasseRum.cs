@@ -14,10 +14,10 @@ namespace ClassRoom
 
         public KlasseRum()
         {
-                
+            _klasseliste = new List<Studerende>();
         }
 
-        public string _KasseNavn { get { return  _KasseNavn; } set { _KasseNavn = value; } }
+        public string KasseNavn { get { return _klasseNavn; } set { _klasseNavn = value; } }
         public List<Studerende> Klasseliste { get { return _klasseliste; } set { _klasseliste= value; } }
         public DateTime SemesterStart { get { return _semesterStart; } set { _semesterStart = value; } }
     }
